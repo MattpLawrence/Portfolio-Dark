@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Slide } from "react-awesome-reveal";
+import './banner.scss';
 
 const ProfComponent = () => {
+
+  function scrollToSection(id) {
+    let ref = document.getElementById(id);
+    if (ref) {
+      ref.scrollIntoView({ behavior: "smooth", block: 'start' });
+    }
+  }
+
   return (
     <Container id="home">
       <Slide direction="left" triggerOnce>
@@ -21,23 +30,23 @@ const ProfComponent = () => {
             I also have experience in backend development with Nodejs and Express.
             I specialize in the development and implementation of component libraries to help facilitate the development of large scale applications.
           </p>
-          <button>Let's talk</button>
-          <Social>
+          <button onClick={() => scrollToSection('service')}>See What I Can Do</button>
+          <Social className="socialIconRow">
             <p>Check out my</p>
             <div className="social-icons">
-              <span>
-                <a href="/">
-                  <AiOutlineInstagram />
+              <span className="socialIcon">
+                <a href="mailto:MattPhLawrence@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
+                  <EmailIcon />
                 </a>
               </span>
-              <span>
-                <a href="/">
-                  <GiEarthAmerica />
+              <span className="socialIcon">
+                <a href="https://github.com/MattpLawrence" target="_blank" rel="noreferrer" aria-label="github">
+                  <LinkedInIcon />
                 </a>
               </span>
-              <span>
-                <a href="/">
-                  <FaLinkedinIn />
+              <span className="socialIcon">
+                <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank" rel="noreferrer" aria-label="Linkedin">
+                  <GitHubIcon />
                 </a>
               </span>
             </div>
@@ -47,7 +56,7 @@ const ProfComponent = () => {
       <Slide direction="right" triggerOnce>
         <Profile>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            src="/images/banner/meAvatar.jpg"
             alt="profile"
           />
         </Profile>
@@ -132,9 +141,6 @@ const Social = styled.div`
       background-color: #01be96;
       position: relative;
       transition: transform 400ms ease-in-out;
-      :hover {
-        transform: rotate(360deg);
-      }
     }
 
     a {
