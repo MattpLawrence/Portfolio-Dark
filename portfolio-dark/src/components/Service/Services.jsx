@@ -1,43 +1,42 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
+import CodeIcon from '@mui/icons-material/Code';
 import { FiCodesandbox } from "react-icons/fi";
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
+import './service.scss'
 
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down" triggerOnce={true}>
         <h4>
-          My <span className="green">services</span>
+          My <span className="green">specialties</span>
         </h4>
         <h1>What I Do</h1>
       </Slide>
       <Cards>
-        <Slide direction="left">
+        <Slide direction="left" triggerOnce>
           <Card
-            Icon={MdDesignServices}
-            title={"ui/ux designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={EngineeringIcon}
+            title={"Component Library Engineer"}
+            disc={`I build component libraries with Angular and React to help facilitate the development of large scale applications.`}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="up" triggerOnce>
           <Card
             Icon={FiCodesandbox}
-            title={"graphic designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"Front End Developer"}
+            disc={`With extensive experience in React and Angular, I am ready to help you build your next application. And with my knowledge of HTML and CSS, I can help you build a beautiful and responsive website.`}
           />
         </Slide>
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce>
           <Card
-            Icon={CgWebsite}
-            title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={CodeIcon}
+            title={"Full Stack Developer"}
+            disc={`From the front end to the back end, I can help you build your next application. I have experience with Node.js, Express, and .Net`}
           />
         </Slide>
       </Cards>

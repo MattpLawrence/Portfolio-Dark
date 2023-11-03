@@ -12,7 +12,7 @@ const Header = () => {
             </Logo>
             <Nav bar={bar}>
                 <span><a href="#home" onClick={() => setBar(!bar)}>Home</a></span>
-                <span><a href="#service" onClick={() => setBar(!bar)} >Services</a></span>
+                <span><a href="#service" onClick={() => setBar(!bar)} >Specialties</a></span>
                 <span><a href="#project" onClick={() => setBar(!bar)} >Projects</a></span>
                 <span><a href="#client" onClick={() => setBar(!bar)} >Testimonials</a></span>
                 <span><a href="#footer" onClick={() => setBar(!bar)} >Portfolio</a></span>

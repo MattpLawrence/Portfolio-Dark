@@ -1,0 +1,118 @@
+#skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .skillsContainer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        & > * {
+            margin: 1rem;
+            overflow: hidden;
+        }
+
+        & .skillContainer{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            gap: .25rem;
+
+            & .skillBar{
+                height: 1rem;
+                min-width: 2rem;
+                border-radius: .25rem;
+            }
+        }
+
+        @media(max-width:640px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+
+    .startContainer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .skillBar{
+            background-color: rgb(104, 97, 97);
+        }
+
+        & #skillBarTS{
+            width: 20rem;
+        }
+        & #skillBarAngular{
+            width: 18rem;
+        }
+        & #skillBarScss{
+            width: 18rem;
+        }
+        & #skillBarReact{
+            width: 14rem;
+        }
+
+        & #skillBarHtml{
+            width: 14rem;
+        }
+        & #skillBarC{
+            width: 6rem;
+        }
+        
+
+        @media(max-width:640px){
+            align-items: flex-start;  
+
+            & .skillContainer{
+                align-items: flex-start;
+            }
+        }
+
+    }
+
+    .endContainer{
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .skillContainer{
+            align-items: flex-start;
+        }
+
+        & .skillBar{
+            background-color: #b2c0bd;
+        }
+
+        & #skillBarEM{
+            width: 20rem;
+        }
+        & #skillBarCA{
+            width: 16rem;
+        }
+        & #skillBarAD{
+            width: 16rem;
+        }
+        & #skillBarD{
+            width: 12rem;
+        }
+
+        & #skillBarWE{
+            width: 12rem;
+        }
+        & #skillBarPS{
+            width: 10rem;
+        }
+    }
+}
