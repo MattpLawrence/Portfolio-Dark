@@ -1,0 +1,66 @@
+<div class="mainContainer">
+  <div class="sizeContainer">
+    <div class="card animate__animated" [ngClass]="{animate__fadeInUpBig: animationTriggers['aboutCard'].isShown && isMobile, animate__fadeIn: animationTriggers['aboutCard'].isShown && !isMobile }" id="aboutCard">
+      <img src="../../../../assets/images/smallPikachu.jpg" alt="aboutCard main img" class="cardTopImg">
+      <div class="iconContainer">
+        <span class="material-icons middleIcon">
+          pets
+        </span>
+      </div>
+      <div class="title">About</div>
+      <div class="mainContent">Learn More About The Kitten Rescue Project</div>
+      <button mat-button  class="buttonTinted buttonLarge navButton" (click)="navigate('about-page')">About</button>
+    </div>
+    <div class="card animate__animated" [ngClass]="{animate__fadeInUpBig: animationTriggers['volunteerCard'].isShown && isMobile, animate__fadeIn: animationTriggers['volunteerCard'].isShown && !isMobile }" id="volunteerCard" >
+      <img src="../../../../assets/images/twoPinkKittens.jpeg" alt="aboutCard main img" class="cardTopImg">
+            <div class="iconContainer">
+        <span class="material-icons middleIcon">
+          pets
+        </span>
+      </div>
+      <div class="title">
+        Volunteer
+      </div>
+      <div class="mainContent">
+        We Are Always In Need Of Loving Support, Find Out How You Can Help
+      </div>
+      <button mat-button  class="buttonTinted buttonLarge navButton" (click)="navigate('volunteer-page')" >
+        Volunteer
+      </button>
+    </div>
+    <div class="card animate__animated" [ngClass]="{animate__fadeInUpBig: animationTriggers['adoptCard'].isShown && isMobile, animate__fadeIn: animationTriggers['adoptCard'].isShown && !isMobile }"  id="adoptCard">
+      <img src="../../../../assets/images/someGreyCutie.jpg" alt="aboutCard main img" class="cardTopImg">
+            <div class="iconContainer">
+        <span class="material-icons middleIcon">
+          pets
+        </span>
+      </div>
+      <div class="title">
+        Adopt
+      </div>
+      <div class="mainContent">
+        Browse And Learn More About Our Adoptable Cats
+      </div>
+      <button mat-button  class="buttonTinted buttonLarge navButton" (click)="navigate('adopt-page/home')">
+        Adopt
+      </button>
+    </div>
+    <div class="card animate__animated" [ngClass]="{animate__fadeInUpBig: animationTriggers['donateCard'].isShown && isMobile, animate__fadeIn: animationTriggers['donateCard'].isShown && !isMobile }"  id="donateCard">
+      <img src="../../../../assets/images/kuja.jpg" alt="aboutCard main img" class="cardTopImg">
+            <div class="iconContainer">
+        <span class="material-icons middleIcon">
+          pets
+        </span>
+      </div>
+      <div class="title">
+        Donate
+      </div>
+      <div class="mainContent">
+        Donate To Help Us Give The Best Care We Can
+      </div>
+      <button mat-button  class="buttonTinted buttonLarge navButton" (click)="navigate('donate-page')">
+        Donate
+      </button>
+    </div>
+  </div>
+</div>

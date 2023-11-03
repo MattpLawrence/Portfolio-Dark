@@ -1,0 +1,193 @@
+@import '../../../../../styles.scss';
+
+//***********animation**************
+
+//add to make sure the animation does not flash
+.animate__animated{
+  opacity: 0;
+}
+
+.animate__animated.animate__fadeInUp{
+  opacity: 1;
+}
+
+
+//***********pet grid************
+.mainContainer{
+  background-color: $colorBackground;
+  @include flexCenterCenter;
+}
+
+#petGridContainer{
+  @include flexCenterSpaceAround;
+  flex-wrap: wrap;
+  width: 70vw;
+  max-width: 1200px;
+  overflow: hidden;
+
+
+  .petContainer{
+    @include flexCenterCenter;
+    width: calc(70vw - 48.25vw);
+    height:  calc(70vw - 48.25vw);
+    max-width: 372px;    
+    max-height: 372px;    
+
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #7f757580;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+      .petImg{
+        height: 100%;
+        object-fit: contain;
+        transition: .6s ease-in-out;
+        transform: scale(1);
+      }
+
+      .petName{
+        margin: 0 1rem;
+        opacity: 0;
+        transition: .4s ease-in-out;
+        transform: scale(0);
+        z-index: 2;
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: .75rem;
+        background-color: $colorPrimaryBackground;
+      }
+
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      .petImg{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      
+      .petName {
+        cursor: pointer;
+        transform: scale(1);
+        opacity: 1;
+      }
+    } 
+  }
+}
+
+
+#petGridContainer .noPetContainer{
+  margin-bottom: 1.5rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: $colorPrimaryBackground;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  width: 50vw;
+  height:  50vw;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 2rem;
+
+  @include flexColumnStart;
+
+  
+    .subTitle{
+      width: 100%;
+      text-align: left;
+    }
+  
+    #emailIcon{
+      margin-bottom: 1.5rem;
+    }
+  
+    .socialLink{
+      text-decoration: none;
+      width: 80%;
+      margin-bottom: 1.5rem;
+      #emailButton{
+        width: 100%;
+      }
+    }
+}
+
+.mailIcon{
+  color: $colorPrimary;
+  font-size: 2rem;
+  translate: 0rem 0.5rem;
+}
+
+@media only screen and (max-width: $breakpointMedium){
+
+
+  #petGridContainer{
+    width: 100vw;
+    justify-content: space-evenly;
+    .petContainer{
+      width: calc(50vw - 3rem);
+      height: calc(50vw - 3rem);
+      margin-bottom: 1.5rem;
+      border-bottom-right-radius: 0rem;
+      .petName{
+        margin: 0;
+        transform: scale(1);
+        opacity: 1;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        border-top-left-radius: .5rem;
+        font-size: 1rem;
+        padding: .75rem;
+        border-bottom: .25rem solid $colorContrastDarkest;
+      }
+    }
+
+    .noPetContainer{
+      width: calc(50vw - 3rem);
+      height: calc(50vw - 3rem);
+    }
+  } 
+
+  #petGridContainer .noPetContainer{
+    width: calc(100% - 10rem);
+    max-width: none;
+    max-height: none;
+    height: fit-content;
+  }
+
+}
+
+
+
+@media only screen and (max-width: $breakpointSmall){
+
+  #petGridContainer{
+    .petContainer{
+      max-width: none;
+      max-height: none;
+      width: calc(100vw - 3rem);
+      height: calc(100vw - 3rem);
+      margin-bottom: 1.5rem;
+    }
+
+    .noPetContainer{
+      width: calc(100vw - 7rem);
+      height: fit-content;
+    }
+  } 
+
+}
+
+
+@media only screen and (max-width: $breakpointXSmall){
+
+
+  #petGridContainer .noPetContainer{
+    padding: 1rem;
+    width: calc(100vw - 5rem);
+  }
+
+}

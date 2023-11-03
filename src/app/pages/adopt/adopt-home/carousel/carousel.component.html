@@ -1,0 +1,30 @@
+<div class="mainContainer scrollEnabled" (swipeleft)="navigate(true)"  (swiperight)="navigate(false)" >
+  <div class="frameContainer">
+    <div id="nextButton" class="navButtonContainer" (click)="navigate(true)">
+      <fa-icon [icon]="icons.right" class="socialIcon fa-2x navButton"  aria-label="next"></fa-icon>
+    </div>
+    <div id="lastButton" class="navButtonContainer" (click)="navigate(false)">
+      <fa-icon [icon]="icons.left" class="socialIcon fa-2x navButton"  aria-label="last"></fa-icon>
+    </div>
+    <div class="carouselContainer">
+      <div class="carouselItem" *ngFor="let item of carouselList" 
+      [ngClass]="{
+        isCurrent: item.id === currentId,
+        isNext: item.id === currentId + 1,
+        isLast: item.id === currentId -1,
+        isLesser: item.id < currentId,
+        isGreater: item.id > currentId
+      }">
+        <!-- If an image -->
+        <img *ngIf="!item.isIframe" class="carouselImg" src="{{item.imgSource}}" alt="pet image {{item.id}}" (dblclick)="imageClick(item.fullImgSource)">
+        <!-- If an iframe -->
+        <iframe *ngIf="item.isIframe" class="petIframe"  title="Video"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen [src]="item.iframeSrc | safe">
+          <a *ngIf="item.isIframe" target="_blank" href="{{item.aHref}}">
+            <img src="{{item.imgSource}}" />
+          </a>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,200 @@
+@import '../../../../../styles.scss';
+
+
+.topBanner{
+
+  width: 100%;
+  .innerBanner{
+    white-space: nowrap;
+    width: 70%;
+    max-width: 1200px;
+    @include flexCenterCenter;
+
+    
+  .highlightLine{
+    width: 50%;
+    height: .125rem;
+    border-radius: .0675rem;
+    background-color: $colorContrastDarkest;
+  }
+  }
+
+}
+
+
+
+.primaryBlock{
+  @include flexColumnCenter;
+  background-color: $colorPrimaryBackground;
+  width: 100%;
+  .sizeContainer{
+    width: 70vw;
+    max-width: 1200px;
+    @include flexColumnCenter;
+  }
+
+}
+
+.mainTitle{
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+  color: $colorPrimary;
+  @include flexCenterCenter;
+}
+
+.mainContents{
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#viewAdoptList{
+  margin-bottom: 1.5rem;
+}
+
+#processContainer{
+  background-color: $colorBackground;
+  @include flexCenterCenter;
+}
+
+#matchContainer{
+
+  @include flexCenterCenter;
+  padding-bottom: 3rem;
+}
+
+.centerContainer{
+  padding: 3rem;
+
+  .sizeContainer{
+    width: 70vw;
+    max-width: 1200px;
+    @include flexCenterSpaceBetween;
+
+    .leftContainer{
+      width: 60%;
+    }
+
+    .rightContainer{
+      width: 35%;
+      .picture{
+        border-radius: .75rem;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+}
+
+.itemContents{
+  text-align: left;
+}
+
+.itemTitle{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#adoptListTitleContainer{
+  padding: 1.5rem 0;
+  background-color: $colorBackground;
+  @include flexCenterCenter;
+
+  .adoptListLine{
+    border: 2px solid $colorLightText;
+    width: 30vw;
+    margin: 2rem;
+  }
+
+  #adoptListTitle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: $colorPrimary;
+  
+  }
+
+}
+
+#starIcon{
+  color: $colorPrimary;
+  translate: 0 .125rem;
+}
+
+@media only screen and (max-width: $breakpointMedium){
+
+  .topBanner .innerBanner{
+    width: calc(100vw - 6rem);
+  }
+
+  .centerContainer .sizeContainer{
+    width: 100%;
+    flex-direction: column;
+    .rightContainer{
+      width: 100%;
+    }
+    .leftContainer{
+      width: 100%;
+    }
+  }
+  //set holder width of image so animation triggers correct onload
+  .picture{
+    min-height: calc(100vw - 6rem)
+  }
+
+  .primaryBlock .sizeContainer{
+    width: calc(100% - 6rem);
+  }
+  .title{
+    max-width: calc(100vw - 6rem);
+  }
+
+
+}
+
+
+@media only screen and (max-width: $breakpointSmall){
+
+  .topBanner .innerBanner{
+    width: calc(100vw - 3rem);
+  }
+
+
+  .mainBanner{
+    margin-bottom: 2vw;
+  }
+
+  .centerContainer{
+    padding: 1.5rem;
+  }
+
+    //set holder width of image so animation triggers correct onload
+    .picture{
+      min-height: calc(100vw - 3rem)
+    }
+
+  .primaryBlock .sizeContainer{
+    width: calc(100% - 3rem);
+  }
+
+  .title{
+    max-width: calc(100vw - 3rem);
+  }
+
+
+}
+
+@media only screen and (max-width: $breakpointXSmall){
+
+
+  .mainTitle{
+    font-size: 2rem;
+  }
+
+}

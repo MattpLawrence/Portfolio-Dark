@@ -1,0 +1,79 @@
+.buttonDefault {
+  background-color: $colorDefaultButton;
+  &:hover {
+    background-color: $colorDefaultButtonHovered;
+  }
+}
+
+.mat-button-disabled {
+  background: $colorDefaultButtonDisabled;
+  color: $colorDefaultTextDisabled;
+}
+
+.buttonDisabled {
+  background: $colorDefaultButtonDisabled !important;
+  color: $colorDefaultTextDisabled !important;
+}
+.buttonTinted {
+  background-color: $colorContrastDarkest;
+  color: $colorPrimaryBackground;
+  &:hover{
+    background-color: $colorContrastDarkestHover;
+  }
+}
+
+.buttonError {
+  background-color: $colorWarn;
+  color: $colorWarnText;
+}
+.buttonSuccess {
+  background-color: $colorSuccess;
+  color: $colorSuccessText;
+}
+
+.buttonText {
+  background-color: $colorPrimaryBackground;
+  &:hover {
+    background-color: $colorDefaultButtonHovered;
+  }
+}
+
+.buttonErrorText {
+  color: $colorWarn;
+}
+.buttonSuccessText {
+  color: $colorSuccess;
+}
+
+.buttonLarge {
+  @include buttonBase(1rem, 0.75rem, 1rem);
+  border-radius: .75rem;
+}
+.buttonMedium {
+  @include buttonBase(0.875rem, 0.5rem, 1rem);
+}
+.buttonSmall {
+  @include buttonBase(0.75rem, 0.5rem, 0.875rem);
+}
+.buttonXSmall {
+  @include buttonBase(0.625rem, 0.375rem, 0.75rem);
+}
+
+.buttonIconLeft {
+  padding-left: 4px;
+}
+
+.buttonIconRight {
+  padding-right: 4px;
+}
+
+.buttonIconBoth {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+//override green disabled color
+.mat-button.mat-button-disabled.mat-button-disabled {
+  background-color: $colorBackground;
+}
+
