@@ -48,7 +48,7 @@ var settings = {
     {
       breakpoint: 990,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
@@ -58,9 +58,9 @@ var settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
         centerMode: false
       }
     },

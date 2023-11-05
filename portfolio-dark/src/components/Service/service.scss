@@ -18,3 +18,35 @@
         }
     }
 }
+
+
+.slick-track{
+
+    @media  screen and (max-width: 990px) {
+        .project{
+            height: 14rem;
+        }
+        
+    }
+
+    @media screen and (max-width: 600px) {
+        .project{
+            height: 20rem;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .project{
+            height: 14rem;
+        }
+    }
+
+
+    // & > * {
+    //     height: 20rem;
+
+    //     & > {
+    //         height: 20rem;
+    //     }
+    // }
+}
