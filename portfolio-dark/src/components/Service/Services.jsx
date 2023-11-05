@@ -2,7 +2,6 @@ import React from "react";
 import CodeIcon from '@mui/icons-material/Code';
 import { FiCodesandbox } from "react-icons/fi";
 import EngineeringIcon from '@mui/icons-material/Engineering';
-import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";

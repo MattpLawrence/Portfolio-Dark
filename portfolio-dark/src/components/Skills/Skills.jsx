@@ -1,7 +1,7 @@
 import React from 'react';
 import './skills.scss';
 import styled from "styled-components";
-import { Slide, Zoom } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 import { useBreakpoint } from '../breakpoints';
 
 export default function Skills() {
