@@ -5,7 +5,7 @@ import { GiCandleFlame } from "react-icons/gi";
 const Header = () => {
     const [bar, setBar] = useState(false);
     return (
-        <Container bar={bar}>
+        <Container bar={bar} >
             <Logo>
                 <span className='green'><GiCandleFlame /></span>
                 <h1>Portfolio</h1>

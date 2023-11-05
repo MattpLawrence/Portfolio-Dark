@@ -54,9 +54,11 @@ const ProfComponent = () => {
         </Texts>
       </Slide>
       <Slide direction="right" triggerOnce>
-        <Profile>
+        <Profile id="avatarContainer">
+          <div className="pentagon"></div>
           <img
-            src="/images/banner/meAvatar.jpg"
+            id="avatar"
+            src="/images/banner/meNoBackgroundSmall.png"
             alt="profile"
           />
         </Profile>
@@ -157,20 +159,9 @@ const Profile = styled.div`
     width: 25rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
-    @media (max-width: 790px) {
-      width: 20rem;
-    }
 
-    @media (max-width: 660px) {
-      width: 18rem;
-    }
 
-    @media (max-width: 640px) {
-      width: 100%;
-    }
+
   }
 
-  :hover img {
-    transform: translateY(-10px);
-  }
 `;

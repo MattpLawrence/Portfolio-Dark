@@ -6,13 +6,9 @@ import { Zoom } from 'react-awesome-reveal';
 const Projects = () => {
     return (
         <Container id='project'>
-            <Zoom>
-                <h1>Recent <span className="green">Projects</span></h1>
-                <p>Here are a few of my recent projects, from a website for a local animal rescue, to nationally utilized enterprise level solutions.</p>
-            </Zoom>
-            <Slide>
-                <SliderComp />
-            </Slide>
+            <h1>Recent <span className="green">Projects</span></h1>
+            <p>Here are a few of my recent projects, from a website for a local animal rescue, to nationally utilized enterprise level solutions.</p>
+            <SliderComp />
         </Container>
     )
 }
