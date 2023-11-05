@@ -4,18 +4,17 @@ import SliderComp from './Slider';
 import { Zoom } from 'react-awesome-reveal';
 
 const Projects = () => {
-  return (
-    <Container id='project'>
-        <Zoom>
-            <h1>Recent <span className="green">Projects</span></h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
-        </Zoom>
-        <Slide>
-            <SliderComp/>
-        </Slide>
-    </Container>
-  )
+    return (
+        <Container id='project'>
+            <Zoom>
+                <h1>Recent <span className="green">Projects</span></h1>
+                <p>Here are a few of my recent projects, from a website for a local animal rescue, to nationally utilized enterprise level solutions.</p>
+            </Zoom>
+            <Slide>
+                <SliderComp />
+            </Slide>
+        </Container>
+    )
 }
 
 export default Projects;

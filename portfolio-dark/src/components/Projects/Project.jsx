@@ -2,17 +2,19 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Project = (props) => {
-    const { img, disc } = props.item;
+    const { img, disc, href, isGithub, name } = props.item;
     return (
         <Container className='project'>
             <img src={img} alt="project" />
             <div className="disc">
-                <h1>Description</h1>
+                <h1>{name}</h1>
                 <p>{disc}
-                    <a href="/">demo</a>
+                    {href !== undefined && (
+                        <a target='_blank' rel='noreferrer' href={href}>{isGithub === true ? "View On Github" : "View Live"}</a>
+                    )}
                 </p>
             </div>
-        </Container>
+        </Container >
     )
 }
 
@@ -40,7 +42,7 @@ const Container = styled.div`
         bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
-        background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.80));
+        background: linear-gradient(rgba(0,0,0, 0.600), rgba(0,0,0, 0.90));
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;
@@ -51,7 +53,7 @@ const Container = styled.div`
             font-size: 0.8rem;
             a{
                 margin-left: 0.4rem;
-                color: red;
+                color: #048b6e;
             }
         }
     }
