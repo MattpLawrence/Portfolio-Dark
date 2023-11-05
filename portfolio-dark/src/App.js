@@ -1,4 +1,3 @@
-import "./index.scss";
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
