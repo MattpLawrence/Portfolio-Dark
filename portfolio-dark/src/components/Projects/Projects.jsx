@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 import SliderComp from './Slider';
-import { Zoom } from 'react-awesome-reveal';
 
 const Projects = () => {
     return (
@@ -41,4 +40,3 @@ const Container = styled.div`
     
 `
 
-const Slide = styled.div``
