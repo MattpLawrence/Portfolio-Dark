@@ -14,7 +14,7 @@ export default function Skills() {
             <div className="skillsContainer">
                 <div className="startContainer">
                     <h3>Technical <span className="green">Skills</span></h3>
-                    <Slide direction={(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') ? "left" : "right"} triggerOnce cascade damping={.3}>
+                    <Slide direction={(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') ? "left" : "right"} triggerOnce >
                         <div className="skillContainer">
                             <h4 className="skillLabel">Typescript</h4>
                             <div className="skillBar" id='skillBarTS'></div>
@@ -44,7 +44,7 @@ export default function Skills() {
                 </div>
                 <div className="endContainer">
                     <h3>Professional <span className="green">Skills</span></h3>
-                    <Slide direction="left" triggerOnce cascade damping={.3}>
+                    <Slide direction="left" triggerOnce>
                         <div className="skillContainer">
                             <h4 className="skillLabel">Expectation Management</h4>
                             <div className="skillBar" id='skillBarEM'></div>

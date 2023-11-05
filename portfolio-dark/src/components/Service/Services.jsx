@@ -1,13 +1,17 @@
 import React from "react";
+import './service.scss'
 import CodeIcon from '@mui/icons-material/Code';
 import { FiCodesandbox } from "react-icons/fi";
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-import './service.scss'
+import { useBreakpoint } from '../breakpoints';
 
 const Services = () => {
+
+  const currentBreakpoint = useBreakpoint();
+
   return (
     <Container id="service">
       <Slide direction="down" triggerOnce={true}>
@@ -24,14 +28,14 @@ const Services = () => {
             disc={`I build component libraries with Angular and React to help facilitate the development of large scale applications.`}
           />
         </Slide>
-        <Slide direction="up" triggerOnce>
+        <Slide direction={(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') ? "right" : "up"} triggerOnce>
           <Card
             Icon={FiCodesandbox}
             title={"Front End Developer"}
-            disc={`With extensive experience in React and Angular, I am ready to help you build your next application. And with my knowledge of HTML and CSS, I can help you build a beautiful and responsive website.`}
+            disc={`With extensive experience in React and Angular with Scss, I am ready to help you build your next fully responsive application. `}
           />
         </Slide>
-        <Slide direction="right" triggerOnce>
+        <Slide direction={(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') ? "left" : "right"} triggerOnce>
           <Card
             Icon={CodeIcon}
             title={"Full Stack Developer"}
