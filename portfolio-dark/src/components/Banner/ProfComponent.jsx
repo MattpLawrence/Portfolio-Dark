@@ -37,12 +37,12 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span className="socialIcon">
-                <a href="https://github.com/MattpLawrence" target="_blank" rel="noreferrer" aria-label="github">
+                <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank" rel="noreferrer" aria-label="github">
                   <LinkedInIcon />
                 </a>
               </span>
               <span className="socialIcon">
-                <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank" rel="noreferrer" aria-label="Linkedin">
+                <a href="https://github.com/MattpLawrence" target="_blank" rel="noreferrer" aria-label="Linkedin">
                   <GitHubIcon />
                 </a>
               </span>

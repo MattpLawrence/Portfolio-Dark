@@ -1,75 +1,91 @@
 import React from "react";
 import styled from "styled-components";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiPhoneCall } from "react-icons/fi";
-import { Fade } from "react-awesome-reveal";
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
-  const scrollUp = () => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
-    <Container id="footer">
+    <Container id="contact">
       <Profile>
         <h1>Contact</h1>
         <div className="address">
         </div>
         <div className="links">
           <h1>Contact me directly:</h1>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <a href="tel:+4733378901">+47 333 78 901</a>
-          </div>
+
           <div>
             <span>
               <HiOutlineMailOpen />
             </span>
-            <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+            <a href="mailto:mattphlawrence@gmail.com">mattphlawrence@gmail.com</a>
           </div>
         </div>
         <div className="profiles">
           <h1>Check my profiles</h1>
-          <div className="icons">
-            <span>
-              <a href="/">
-                <AiFillGithub />
-              </a>
-            </span>
-            <span>
-              <a href="/">
-                <AiFillLinkedin />
-              </a>
-            </span>
-            <span>
-              <a href="/">
-                <BsFacebook />
-              </a>
-            </span>
-            <span>
-              <a href="/">
-                <BsSlack />
-              </a>
-            </span>
-          </div>
+          <Social className="socialIconRow">
+            <div className="social-icons">
+              <span className="socialIcon">
+                <a href="mailto:MattPhLawrence@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
+                  <EmailIcon />
+                </a>
+              </span>
+              <span className="socialIcon">
+                <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank" rel="noreferrer" aria-label="github">
+                  <LinkedInIcon />
+                </a>
+              </span>
+              <span className="socialIcon">
+                <a href="https://github.com/MattpLawrence" target="_blank" rel="noreferrer" aria-label="Linkedin">
+                  <GitHubIcon />
+                </a>
+              </span>
+            </div>
+          </Social>
         </div>
-        <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
-        </Fade>
       </Profile>
     </Container>
   );
 };
 
 export default Footer;
+
+const Social = styled.div`
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  p {
+    font-size: 0.9rem;
+    @media (max-width: 690px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    span {
+      width: 2.3rem;
+      height: 2rem;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      background-color: #01be96;
+      position: relative;
+      transition: transform 400ms ease-in-out;
+    }
+
+    a {
+      color: #fff;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+`;
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -156,22 +172,5 @@ const Profile = styled.div`
         }
       }
     }
-  }
-`;
-const ArrowUp = styled.div`
-  width: 2rem;
-  height: 2rem;
-  background-color: #01be96;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  @media (max-width: 650px) {
-    position: absolute;
-    right: 3rem;
-    top: 16rem;
   }
 `;
