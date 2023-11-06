@@ -10,9 +10,19 @@
         align-items: flex-start;
         justify-content: center;
         gap: 1rem;
+        width: 100%;
         & > * {
             margin: 1rem;
             overflow: hidden;
+            width: 30rem;
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+            }
+
+            & > div{
+                width: 100%;
+            }
         }
 
         & .skillContainer{
@@ -49,23 +59,23 @@
         }
 
         & #skillBarTS{
-            width: 20rem;
+            width: 100%;
         }
         & #skillBarAngular{
-            width: 18rem;
+            width: 90%;
         }
         & #skillBarScss{
-            width: 18rem;
+            width: 90%;
         }
         & #skillBarReact{
-            width: 14rem;
+            width: 70%;
         }
 
         & #skillBarHtml{
-            width: 14rem;
+            width: 70%;
         }
         & #skillBarC{
-            width: 6rem;
+            width: 30%;
         }
         
 
@@ -96,23 +106,23 @@
         }
 
         & #skillBarEM{
-            width: 20rem;
+            width: 100%;
         }
         & #skillBarCA{
-            width: 16rem;
+            width: 80%;
         }
         & #skillBarAD{
-            width: 16rem;
+            width: 80%;
         }
         & #skillBarD{
-            width: 12rem;
+            width: 60%;
         }
 
         & #skillBarWE{
-            width: 12rem;
+            width: 60%;
         }
         & #skillBarPS{
-            width: 10rem;
+            width: 50%;
         }
     }
 }
