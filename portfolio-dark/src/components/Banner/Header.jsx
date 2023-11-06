@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { GiCandleFlame } from "react-icons/gi";
+import ScrollTop from '../_common/ScrollTop';
+import { Fab } from '@mui/material';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
@@ -22,6 +25,11 @@ const Header = () => {
                 className="bars">
                 <div className="bar"></div>
             </div>
+            <ScrollTop>
+                <Fab size="small" aria-label="scroll back to top">
+                    <KeyboardArrowUpIcon />
+                </Fab>
+            </ScrollTop>
         </Container>
     )
 }
