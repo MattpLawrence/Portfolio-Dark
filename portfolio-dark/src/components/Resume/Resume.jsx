@@ -20,24 +20,21 @@ export default function Resume() {
   };
 
   const handlePrint = () => {
-    console.log('print')
     const pdfURL = process.env.PUBLIC_URL + '/Resume11_2023.pdf'; // Path to your PDF file in the public folder
 
-    // Create an invisible iframe to load the PDF
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = pdfURL;
-    document.body.appendChild(iframe);
+    // Open the PDF in a new browser tab/window
+    const newWindow = window.open(pdfURL, '_blank');
 
-    // Once the PDF is loaded in the iframe, trigger the printing
-    iframe.onload = () => {
-      iframe.contentWindow.print();
-    };
-
-    // Remove the iframe after printing
-    setTimeout(() => {
-      document.body.removeChild(iframe);
-    }, 15000); // Adjust this time according to your PDF load time
+    // Check if the window has been opened
+    if (newWindow !== null) {
+      // Once the PDF is loaded in the new window, trigger the print functionality
+      newWindow.onload = () => {
+        newWindow.print();
+      };
+    } else {
+      // In case the window couldn't be opened
+      alert('Pop-up blocked. Please allow pop-ups for this site to print the document.');
+    }
   };
 
 
