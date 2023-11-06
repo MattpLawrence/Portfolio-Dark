@@ -5,7 +5,6 @@ import { FiCodesandbox } from "react-icons/fi";
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import styled from "styled-components";
 import Card from "./Card";
-import { useBreakpoint } from '../breakpoints';
 
 const Services = () => {
 
