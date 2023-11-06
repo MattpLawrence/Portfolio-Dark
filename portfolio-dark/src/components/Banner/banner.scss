@@ -35,7 +35,6 @@
 
     .pentagon {
         margin-top: 6rem;
-        margin-bottom: 1px;
         position: relative;
         width: 30rem; /* Adjust size as needed */
         height: 30rem; /* This value is approximately 0.5 * (1 + √5) * width */
@@ -47,7 +46,7 @@
         @media screen and (max-width: 470px) {
             width: 20rem;
             height: 20rem;
-            margin-top: 3rem;
+            margin-top: 5rem;
         }
       }
 }

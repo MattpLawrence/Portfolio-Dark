@@ -98,7 +98,7 @@ export default function Resume() {
             <div className="experienceContainer">
               <h2 className="sectionTitle">EXPERIENCE</h2>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Improving,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Consultant</span></h2>
+                <h3 className="experienceTitle">Improving,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Consultant</span></h3>
                 <div className="dateRow">March 2021 - PRESENT</div>
                 <p>Front-end developer specializing in TypeScript, SCSS, and modern JavaScript frameworks. Mentored team members in SCSS styling and layout as well as TypeScript logic and function.</p>
                 <h4>Internal Website:</h4>
@@ -109,19 +109,19 @@ export default function Resume() {
                 <p>Designed and developed a full stack,  internal Angular component library allowing team members to efficiently implement reusable components from a central location.</p>
               </div>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Voith Paper,<span className='lightText'> Austell GA —</span><span className='lightText italic'>Mechanical Engineer Co-Op</span></h2>
+                <h3 className="experienceTitle">Voith Paper,<span className='lightText'> Austell GA —</span><span className='lightText italic'>Mechanical Engineer Co-Op</span></h3>
                 <div className="dateRow">December 2019 - December 2021</div>
                 <p>Utilized Microsoft Access to create project Databases. Learned and used VBA and SQL to build databases for inventory tracking, safety training, job education, and work instruction. </p>
               </div>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Fitness Together,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Personal Trainer</span></h2>
+                <h3 className="experienceTitle">Fitness Together,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Personal Trainer</span></h3>
                 <div className="dateRow">May 2017 - December 2019</div>
               </div>
             </div>
             <div className="interestsContainer">
               <h2 className="sectionTitle">PROJECTS AND INTERESTS</h2>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Animal Rescue,<span className='lightText'> Foster and Volunteer</span></h2>
+                <h3 className="experienceTitle">Animal Rescue,<span className='lightText'> Foster and Volunteer</span></h3>
                 <div className="dateRow">September 20 - PRESENT</div>
                 <p>Animal welfare advocate, foster, and co-founder for The Kitten Rescue Project, a local non-profit rescue.</p>
                 <h4>Rescue's Website:</h4>
@@ -133,12 +133,12 @@ export default function Resume() {
             <div className="educationContainer">
               <h2 className="sectionTitle">PROJECTS AND INTERESTS</h2>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Georgia Tech,<span className='lightText'> Atlanta Ga —</span><span className='lightText italic'>MERN stack certification</span></h2>
+                <h3 className="experienceTitle">Georgia Tech,<span className='lightText'> Atlanta Ga —</span><span className='lightText italic'>MERN stack certification</span></h3>
                 <div className="dateRow">December 2021 - March 2022</div>
                 <p>Used Node.js and Express.js to create a server and establish routes of RESTful APIs. MySQL and Sequelize were used to store information in a database</p>
               </div>
               <div className="experienceSection">
-                <h2 className="experienceTitle">Kennesaw State,<span className='lightText'> Atlanta Ga —</span><span className='lightText italic'>Mechanical Engineering</span></h2>
+                <h3 className="experienceTitle">Kennesaw State,<span className='lightText'> Atlanta Ga —</span><span className='lightText italic'>Mechanical Engineering</span></h3>
                 <div className="dateRow">2017 - 2021</div>
               </div>
             </div>
