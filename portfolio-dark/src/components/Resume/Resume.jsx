@@ -99,7 +99,7 @@ export default function Resume() {
               <h2 className="sectionTitle">EXPERIENCE</h2>
               <div className="experienceSection">
                 <h3 className="experienceTitle">Improving,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Consultant</span></h3>
-                <div className="dateRow">March 2021 - PRESENT</div>
+                <div className="dateRow">March 2022 - PRESENT</div>
                 <p>Front-end developer specializing in TypeScript, SCSS, and modern JavaScript frameworks. Mentored team members in SCSS styling and layout as well as TypeScript logic and function.</p>
                 <h4>Internal Website:</h4>
                 <p>Led the development of our company's new SEO-oriented website. This React / Next TypeScript app was developed from the ground up to be a showcase of what our company could do.</p>
