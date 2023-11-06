@@ -20,6 +20,7 @@ export default function Resume() {
   };
 
   const handlePrint = () => {
+    console.log('print')
     const pdfURL = process.env.PUBLIC_URL + '/Resume11_2023.pdf'; // Path to your PDF file in the public folder
 
     // Create an invisible iframe to load the PDF
@@ -48,25 +49,9 @@ export default function Resume() {
           <div className="headerContainer">
             <h1 className="name">Matthew Lawrence</h1>
             <div className="subHeader">Full Stack Developer/ Front End Developer/ Component Library Engineer</div>
-            {(currentBreakpoint !== 'xSmall' && currentBreakpoint !== 'small') && (
+            {(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') ? (
               <React.Fragment>
-                <div div className="contactRow">
-                  <span className='bold'>Portfolio: </span>
-                  <a href="https://mpl-portfolio-2023.netlify.app/" target='_blank' rel='noreferrer'>https://mpl-portfolio-2023.netlify.app/</a>
-                </div>
                 <div className="contactRow">
-                  <span className='bold'>LinkedIn: </span>
-                  <a href="https://www.linkedin.com/in/mattplawrence" target='_blank' rel='noreferrer'>https://www.linkedin.com/in/mattplawrence</a>
-                </div>
-                <div className="contactRow">
-                  <span className='bold'>Github: </span>
-                  <a href="https://github.com/MattpLawrence" target='_blank' rel='noreferrer'>https://github.com/MattpLawrence</a>
-                </div>
-              </React.Fragment>
-            )}
-            {(currentBreakpoint === 'xSmall' || currentBreakpoint === 'small') && (
-              <React.Fragment>
-                <div div className="contactRow">
                   <span className='bold'>Portfolio: </span>
                   <a href="https://mpl-portfolio-2023.netlify.app/" target='_blank' rel='noreferrer'>View Portfolio</a>
                 </div>
@@ -79,7 +64,23 @@ export default function Resume() {
                   <a href="https://github.com/MattpLawrence" target='_blank' rel='noreferrer'>View Github</a>
                 </div>
               </React.Fragment>
-            )}
+            ) :
+              (
+                <React.Fragment>
+                  <div className="contactRow">
+                    <span className='bold'>Portfolio: </span>
+                    <a href="https://mpl-portfolio-2023.netlify.app/" target='_blank' rel='noreferrer'>https://mpl-portfolio-2023.netlify.app/</a>
+                  </div>
+                  <div className="contactRow">
+                    <span className='bold'>LinkedIn: </span>
+                    <a href="https://www.linkedin.com/in/mattplawrence" target='_blank' rel='noreferrer'>https://www.linkedin.com/in/mattplawrence</a>
+                  </div>
+                  <div className="contactRow">
+                    <span className='bold'>Github: </span>
+                    <a href="https://github.com/MattpLawrence" target='_blank' rel='noreferrer'>https://github.com/MattpLawrence</a>
+                  </div>
+                </React.Fragment>
+              )}
 
           </div>
           <div className="downloadContainer">
