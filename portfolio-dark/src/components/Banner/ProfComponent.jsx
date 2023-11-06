@@ -147,7 +147,7 @@ const Social = styled.div`
     a {
       color: #fff;
       position: absolute;
-      top: 55%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
     }

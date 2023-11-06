@@ -17,6 +17,7 @@ const Header = () => {
                 <span><a href="#skills" onClick={() => setBar(!bar)} >Skills</a></span>
                 <span><a href="#project" onClick={() => setBar(!bar)} >Projects</a></span>
                 <span><a href="#resume" onClick={() => setBar(!bar)} >Resume</a></span>
+                <span><a href="#contact" onClick={() => setBar(!bar)} >Contact</a></span>
             </Nav>
             <div
                 onClick={() => setBar(!bar)}
