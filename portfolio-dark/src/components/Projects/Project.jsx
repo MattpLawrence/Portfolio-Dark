@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components';
+import './projects.scss';
+
 
 const Project = (props) => {
     const { img, disc, href, isGithub, name } = props.item;
     return (
         <Container className='project'>
+
             <img src={img} alt="project" />
             <div className="disc">
-                <h1>{name}</h1>
-                <p>{disc}
+                <h4 className='cardTitle'>{name}</h4>
+                <p className='cardText'>{disc}
+                    <br />
                     {href !== undefined && (
-                        <a target='_blank' rel='noreferrer' href={href}>{isGithub === true ? "View On Github" : "View Live"}</a>
+                        <a className='linkText' target='_blank' rel='noreferrer' href={href}>{isGithub === true ? "View On Github" : "View Live"}</a>
                     )}
                 </p>
             </div>
@@ -53,7 +57,7 @@ const Container = styled.div`
             font-size: 0.8rem;
             a{
                 margin-left: 0.4rem;
-                color: #048b6e;
+                
             }
         }
     }

@@ -1,6 +1,10 @@
+.initials{
+    font-family: 'Nunito', sans-serif;
+}
+
 .socialIconRow .social-icons{
     .socialIcon{
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover{
             background-color: #048b6e;
             filter: drop-shadow(0px 10px 10px #01be9570);

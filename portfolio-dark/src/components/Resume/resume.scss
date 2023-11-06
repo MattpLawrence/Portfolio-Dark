@@ -1,0 +1,134 @@
+.resumeContainer{
+    background-color: #e5e5e6;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .25rem;
+    overflow: hidden;
+    & *{
+        font-family: 'Roboto', sans-serif;
+
+        color: rgb(24, 24, 24);
+    }
+
+
+    .sectionTitle{
+        color: #01a783;
+        margin-bottom: 1rem;
+    }
+
+    .lightText{
+        font-weight: 400;
+    }
+    .italic{
+        font-style: italic;
+    }
+
+    .dateRow{
+        font-size: .875rem;
+        color: rgb(82, 81, 81);
+        margin-bottom: .75rem;
+    }
+
+    .experienceSection{
+        margin-bottom: 1.5rem;
+
+        & > h4{
+            margin-top: .5rem;
+        }
+    }
+
+    .skills{
+        font-weight: 500;
+        color: rgb(82, 81, 81);
+    }
+
+    button {
+        background-color: #01be96;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: #048b6e;
+        }
+      }
+    
+    .topContainer{
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        .headerContainer{
+            width: 100%;
+
+            @media screen and (max-width: 400px) {
+                margin-top: 4rem;
+                
+            }
+        }
+        .downloadContainer{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 1rem;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+        h1{
+            font-size: 3rem;
+            max-width: calc(100% - 8rem);
+        }
+        
+        .subHeader{
+            font-size: .875rem;
+            margin-bottom: .5rem;
+        }
+
+        .bold{
+            font-weight: 800;
+        }
+    }
+
+    .mainContents{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and (max-width: 640px) {
+            flex-direction: column;
+            & > div{
+                width: 100%;
+            
+            }
+        }
+    }
+
+    .startContainer{
+        width: calc(70% - 3rem);
+        min-height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;      
+
+    }
+
+    .endContainer{
+        width: 30%;
+        min-height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+
+
+    
+}

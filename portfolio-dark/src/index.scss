@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -89,10 +89,14 @@ body{
 
 #root{
   overflow-x: hidden;
+  & > *{
+    overflow: hidden;
+  }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 14px; /* Adjust the base font size for 1rem at this breakpoint */
-  }
+
+.linkText{
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #50cab0;;
 }

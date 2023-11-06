@@ -19,9 +19,6 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left" triggerOnce>
         <Texts>
-          <h4>
-            Hello <span className="green">I'am</span>
-          </h4>
           <h1 className="green">Matt Lawrence</h1>
           <h3>Developer And Component Library Engineer</h3>
           <p>
@@ -58,7 +55,7 @@ const ProfComponent = () => {
           <div className="pentagon"></div>
           <img
             id="avatar"
-            src="/images/banner/meNoBackgroundSmall.png"
+            src="/images/banner/meSecondarySmallCrop.png"
             alt="profile"
           />
         </Profile>
@@ -72,7 +69,7 @@ export default ProfComponent;
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
@@ -90,10 +87,11 @@ const Texts = styled.div`
   h4 {
     padding: 1rem 0;
     font-weight: 500;
+    font-family: 'Nunito', sans-serif;
   }
   h1 {
     font-size: 2rem;
-    font-family: "Secular One", sans-serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
   }
   h3 {
@@ -101,6 +99,7 @@ const Texts = styled.div`
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
     text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
   }
   p {
     font-weight: 300;
@@ -114,9 +113,9 @@ const Texts = styled.div`
     border: none;
     color: #fff;
     font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
+    transition: all 0.2s ease-in-out;
     :hover {
-      filter: drop-shadow(0px 10px 10px #01be9570);
+      background-color: #048b6e;
     }
   }
 `;

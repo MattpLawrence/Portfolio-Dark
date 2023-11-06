@@ -1,0 +1,45 @@
+#cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > *{
+        width: 30%;
+
+        @media screen and (max-width: 640px) {
+            width: calc(100% - 2rem)
+            
+        }
+    }
+}
+
+
+.slick-track{
+
+    .project{
+        height: 16rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .project{
+            height: 20rem;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .project{
+            height: 14rem;
+        }
+    }
+
+}
+
+.project{
+
+    @media  screen and (max-width: 600px) {
+        .disc .cardText{
+            font-size: 1rem;
+        }  
+    }
+}

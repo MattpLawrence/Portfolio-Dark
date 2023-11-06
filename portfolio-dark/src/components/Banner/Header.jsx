@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { GiCandleFlame } from "react-icons/gi";
 import ScrollTop from '../_common/ScrollTop';
 import { Fab } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -10,15 +9,14 @@ const Header = () => {
     return (
         <Container bar={bar} >
             <Logo>
-                <span className='green'><GiCandleFlame /></span>
+                <span className='green initials'>ML</span>
                 <h1>Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home" onClick={() => setBar(!bar)}>Home</a></span>
                 <span><a href="#service" onClick={() => setBar(!bar)} >Specialties</a></span>
                 <span><a href="#skills" onClick={() => setBar(!bar)} >Skills</a></span>
                 <span><a href="#project" onClick={() => setBar(!bar)} >Projects</a></span>
-                <span><a href="#footer" onClick={() => setBar(!bar)} >Portfolio</a></span>
+                <span><a href="#resume" onClick={() => setBar(!bar)} >Resume</a></span>
             </Nav>
             <div
                 onClick={() => setBar(!bar)}

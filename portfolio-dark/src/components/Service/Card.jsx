@@ -7,7 +7,7 @@ const Card = (props) => {
         <Container>
             <span className='green'><Icon className="cardIcon" /></span>
             <h1>{title}</h1>
-            <p>{disc}</p>
+            <p className='textObject' style={{ fontSize: "1rem" }}>{disc}</p>
         </Container>
     )
 }

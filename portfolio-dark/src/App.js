@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 import Skills from "./components/Skills/Skills";
+import Resume from "./components/Resume/Resume";
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       </LightColor>
       <Projects />
       <LightColor>
-        <Footer />
+        <Resume />
       </LightColor>
+      <Footer />
     </Container>
   );
 }
