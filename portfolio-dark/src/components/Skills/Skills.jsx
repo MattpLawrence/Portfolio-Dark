@@ -28,18 +28,19 @@ export default function Skills() {
                             <div className="skillBar" id='skillBarScss'></div>
                         </div>
                         <div className="skillContainer">
+                            <h4 className="skillLabel">C#</h4>
+                            <div className="skillBar" id='skillBarC'></div>
+                        </div>
+                        <div className="skillContainer">
                             <h4 className="skillLabel">React</h4>
                             <div className="skillBar" id='skillBarReact'></div>
                         </div>
 
                         <div className="skillContainer">
-                            <h4 className="skillLabel">HTML</h4>
-                            <div className="skillBar" id='skillBarHtml'></div>
+                            <h4 className="skillLabel">.Net</h4>
+                            <div className="skillBar" id='skillBarNet'></div>
                         </div>
-                        <div className="skillContainer">
-                            <h4 className="skillLabel">C#</h4>
-                            <div className="skillBar" id='skillBarC'></div>
-                        </div>
+
                     </Slide>
                 </div>
                 <div className="endContainer">

@@ -14,13 +14,13 @@ export default function Resume() {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = process.env.PUBLIC_URL + '/Resume11_2023.pdf'; // Path to your PDF file
+    link.href = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_12-23.pdf'; // Path to your PDF file
     link.download = 'MPL_Resume_2023.pdf'; // Name for the downloaded file
     link.click(); // Simulate click on the link to initiate the download
   };
 
   const handlePrint = () => {
-    const pdfURL = process.env.PUBLIC_URL + '/Resume11_2023.pdf'; // Path to your PDF file in the public folder
+    const pdfURL = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_12-23.pdf'; // Path to your PDF file in the public folder
 
     // Open the PDF in a new browser tab/window
     const newWindow = window.open(pdfURL, '_blank');
@@ -101,6 +101,8 @@ export default function Resume() {
                 <h3 className="experienceTitle">Improving,<span className='lightText'> Atlanta GA —</span><span className='lightText italic'>Consultant</span></h3>
                 <div className="dateRow">March 2022 - PRESENT</div>
                 <p>Front-end developer specializing in TypeScript, SCSS, and modern JavaScript frameworks. Mentored team members in SCSS styling and layout as well as TypeScript logic and function.</p>
+                <h4>Background Check Application:</h4>
+                <p>Experienced .NET C# developer proficient in maintaining and enhancing legacy projects, demonstrating expertise in navigating and optimizing existing codebases as well as creating new features to synergize with the existing functionality. </p>
                 <h4>Internal Website:</h4>
                 <p>Led the development of our company's new SEO-oriented website. This React / Next TypeScript app was developed from the ground up to be a showcase of what our company could do.</p>
                 <h4>Checkout Application:</h4>
@@ -144,7 +146,7 @@ export default function Resume() {
             </div>
             <div className="skillsContainer">
               <h2 className="sectionTitle">TECHNICAL SKILLS</h2>
-              <p className='skills'>Typescript, Angular, React, HTML, CSS, SCSS, Javascript, MERN stack, NPM, GIT, C#, ASP.net, Azure</p>
+              <p className='skills'>Typescript, Angular, React, C#, .NET, HTML, CSS, SCSS, Javascript, MERN stack, NPM, GIT, Azure, Agile Scrum</p>
             </div>
             <div className="skillsContainer">
               <h2 className="sectionTitle">PROFESSIONAL SKILLS</h2>

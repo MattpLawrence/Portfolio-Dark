@@ -67,16 +67,17 @@
         & #skillBarScss{
             width: 90%;
         }
+        & #skillBarC{
+            width: 70%;
+        }
         & #skillBarReact{
             width: 70%;
         }
 
-        & #skillBarHtml{
-            width: 70%;
+        & #skillBarNet{
+            width: 60%;
         }
-        & #skillBarC{
-            width: 30%;
-        }
+
         
 
         @media(max-width:640px){
