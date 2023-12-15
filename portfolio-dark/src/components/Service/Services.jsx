@@ -33,7 +33,7 @@ const Services = () => {
           className="card"
           Icon={CodeIcon}
           title={"Full Stack Developer"}
-          disc={`From the front end to the back end, I can help you build your next application. I have experience with Node.js, Express, and .Net`}
+          disc={`From the front end to the back end, I can help you build your next application. I have experience with .Net, C#, Node.js, and Express.`}
         />
       </Cards>
     </Container>

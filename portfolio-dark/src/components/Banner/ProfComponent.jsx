@@ -24,7 +24,7 @@ const ProfComponent = () => {
           <p>
             Hi there, I am a full stack developer and component library engineer.
             My main professional focus is on front end development in modern javascript frameworks like React and Angular.
-            I also have experience in backend development with Nodejs and Express.
+            I also have experience in backend development with C#, .Net, Nodejs and Express.
             I specialize in the development and implementation of component libraries to help facilitate the development of large scale applications.
           </p>
           <button onClick={() => scrollToSection('service')}>See What I Can Do</button>
