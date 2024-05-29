@@ -14,13 +14,13 @@ export default function Resume() {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_12-23.pdf'; // Path to your PDF file
+    link.href = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-24.pdf'; // Path to your PDF file
     link.download = 'MPL_Resume_2023.pdf'; // Name for the downloaded file
     link.click(); // Simulate click on the link to initiate the download
   };
 
   const handlePrint = () => {
-    const pdfURL = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_12-23.pdf'; // Path to your PDF file in the public folder
+    const pdfURL = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-24.pdf'; // Path to your PDF file in the public folder
 
     // Open the PDF in a new browser tab/window
     const newWindow = window.open(pdfURL, '_blank');
@@ -146,7 +146,7 @@ export default function Resume() {
             </div>
             <div className="skillsContainer">
               <h2 className="sectionTitle">TECHNICAL SKILLS</h2>
-              <p className='skills'>Typescript, Angular, React, C#, .NET, HTML, CSS, SCSS, Javascript, MERN stack, NPM, GIT, Azure, Agile Scrum</p>
+              <p className='skills'>Typescript, React, C#, .NET, SQL, SQL Server, Angular, HTML, CSS, SCSS, Javascript, MERN stack, NPM, GIT, Azure, Agile Scrum, ML, OpenAI, RAG</p>
             </div>
             <div className="skillsContainer">
               <h2 className="sectionTitle">PROFESSIONAL SKILLS</h2>

@@ -41,6 +41,11 @@ export default function Skills() {
                             <div className="skillBar" id='skillBarNet'></div>
                         </div>
 
+                        <div className="skillContainer">
+                            <h4 className="skillLabel">SQL</h4>
+                            <div className="skillBar" id='skillBarSQL'></div>
+                        </div>
+
                     </Slide>
                 </div>
                 <div className="endContainer">
@@ -49,6 +54,10 @@ export default function Skills() {
                         <div className="skillContainer">
                             <h4 className="skillLabel">Expectation Management</h4>
                             <div className="skillBar" id='skillBarEM'></div>
+                        </div>
+                        <div className="skillContainer">
+                            <h4 className="skillLabel">Problem Solving</h4>
+                            <div className="skillBar" id='skillBarPrSlv'></div>
                         </div>
                         <div className="skillContainer">
                             <h4 className="skillLabel">Client Alignment</h4>

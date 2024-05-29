@@ -78,6 +78,10 @@
             width: 60%;
         }
 
+        & #skillBarSQL{
+            width: 40%;
+        }
+
         
 
         @media(max-width:640px){
@@ -108,6 +112,9 @@
 
         & #skillBarEM{
             width: 100%;
+        }
+        & #skillBarPrSlv{
+            width: 90%;
         }
         & #skillBarCA{
             width: 80%;
