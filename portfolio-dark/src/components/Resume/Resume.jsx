@@ -103,8 +103,8 @@ export default function Resume() {
                 <p>Front-end developer specializing in TypeScript, SCSS, and modern JavaScript frameworks. Mentored team members in SCSS styling and layout as well as TypeScript logic and function.</p>
                 <h4>Background Check Application:</h4>
                 <p>Experienced .NET C# developer proficient in maintaining and enhancing legacy projects, demonstrating expertise in navigating and optimizing existing codebases as well as creating new features to synergize with the existing functionality. </p>
-                <h4>Internal Website:</h4>
-                <p>Led the development of our company's new SEO-oriented website. This React / Next TypeScript app was developed from the ground up to be a showcase of what our company could do.</p>
+                <h4>Bank Admin Portal:</h4>
+                <p>Led the development of a React TypeScript, .NET Core application designed to support the internal functions of a nationwide bank. Including securely managing PPI</p>
                 <h4>Checkout Application:</h4>
                 <p>Led the development of a large-scale public-facing front-end application using TypeScript and Angular with Material styling. </p>
                 <h4>Component Library and NPM package:</h4>
