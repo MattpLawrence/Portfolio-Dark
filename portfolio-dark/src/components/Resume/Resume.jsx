@@ -14,13 +14,13 @@ export default function Resume() {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-24.pdf'; // Path to your PDF file
+    link.href = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-25.pdf'; // Path to your PDF file
     link.download = 'MPL_Resume_2023.pdf'; // Name for the downloaded file
     link.click(); // Simulate click on the link to initiate the download
   };
 
   const handlePrint = () => {
-    const pdfURL = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-24.pdf'; // Path to your PDF file in the public folder
+    const pdfURL = process.env.PUBLIC_URL + '/Matthew_Lawrence_Resume_6-25.pdf'; // Path to your PDF file in the public folder
 
     // Open the PDF in a new browser tab/window
     const newWindow = window.open(pdfURL, '_blank');
